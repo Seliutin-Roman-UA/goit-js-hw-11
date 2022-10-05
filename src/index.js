@@ -17,6 +17,7 @@ function handlerSubmit(e) {
     return;
   }
   searchString = elHTML.input.value.toLowerCase().trim().split(' ');
+  elHTML.btnLoadMore.classList.add('invisible');
   sesija.page = 1;
   sesija.maxPage = 1;
   elHTML.gallery.innerHTML = '';
